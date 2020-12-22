@@ -4,13 +4,13 @@ Diagnostics of ecosystem-scale stomatal optimization models.
 
 **Description**
 
-This repository containts scripts in the python computing language necessary to repeat analysis in:
+This repository contains scripts in the python computing language necessary to repeat analysis in:
 
 Bassiouni M. and G. Vico, *Parsimony versus predictive and functional performance of three stomatal optimization principles in a big-leaf framework, in revision*.
 
-The following scripts manage data (get_metadata_sites.py, get_data_sites.py), calibrate models (fit_gs_params.py), and generate results (process_fit_gs_results.py) represented in the publication.
+The following scripts manage data (get_metadata_sites.py, get_data_sites.py), calibrate models (fit_gs_params.py), and generate results (process_fit_gs_results.py) represented in the manuscript.
 
-The ipython notebook (NP_figures.ipynb) executes scripts in the repository to analyze data or model output and recreate all figures in the publication.
+The ipython notebook (NP_figures.ipynb) executes scripts in the repository to analyze data or model output and recreate all figures in the manuscript.
 
 The FLUXNET2015 data products used in this study are available at http://fluxnet.fluxdata.org/data/fluxnet2015-dataset/.
 
