@@ -127,17 +127,17 @@ def fig_pftviolins(fig_name):
     fig_name = os.path.join(fig_dir, fig_name) 
     fig = plt.figure(figsize=(3.5, 5.75))
 
-    mod_p_list = [['WUE_d', 'WUE', 'lww', r"$\lambda_{ww}$; $b_1'$", 1,  model_colors[0], [0, 5], [0, 2, 4], -0.35], 
-                  ['WUE_d', 'WUE', 'b', r"$\beta_0$; $b_2'$", 2,  model_colors[0], [0, 5], [0, 2, 4], -0.35],
+    mod_p_list = [['WUE_d', 'WUE', 'lww', r"(a) $\lambda_{ww}$; $b_1'$", 1,  model_colors[0], [0, 5], [0, 2, 4], -0.35], 
+                  ['WUE_d', 'WUE', 'b', r"(b) $\beta_0$; $b_2'$", 2,  model_colors[0], [0, 5], [0, 2, 4], -0.35],
                   
-                  ['CM_d4', 'CM', 'b1', r"$\lambda_{ww}$; $b_1'$", 1,  model_colors[1], [0, 5], [0, 2, 4], 0.35], 
-                  ['CM_d4', 'CM', 'b2',  r"$\beta_0$; $b_2'$", 2,  model_colors[1], [0, 5], [0, 2, 4], 0.35], 
-                  ['CM_d4', 'CM','a',  r'$a$', 4,  model_colors[1], [0, 10], [0, 4, 8], -0.35], 
-                  ['CM_d4', 'CM','psi_50',  r'$-\psi_{50}$', 5,  model_colors[1], [0, 10], [0, 4, 8], -0.35],
+                  ['CM_d4', 'CM', 'b1', r"(a) $\lambda_{ww}$; $b_1'$", 1,  model_colors[1], [0, 5], [0, 2, 4], 0.35], 
+                  ['CM_d4', 'CM', 'b2',  r"(b) $\beta_0$; $b_2'$", 2,  model_colors[1], [0, 5], [0, 2, 4], 0.35], 
+                  ['CM_d4', 'CM','a',  r'(d) $a$', 4,  model_colors[1], [0, 10], [0, 4, 8], -0.35], 
+                  ['CM_d4', 'CM','psi_50',  r'(e) $-\psi_{50}$', 5,  model_colors[1], [0, 10], [0, 4, 8], -0.35],
                   
-                  ['SOX_d3', 'SOX', 'kmax', r'$K_{max}$', 3, model_colors[2], [0, 5], [0, 2, 4], 0], 
-                  ['SOX_d3', 'SOX', 'a',  r'$a$', 4, model_colors[2], [0, 10], [0, 4, 8], 0.35], 
-                  ['SOX_d3', 'SOX', 'psi_50',  r'$-\psi_{50}$', 5, model_colors[2], [0, 10], [0, 4, 8], 0.35]]
+                  ['SOX_d3', 'SOX', 'kmax', r'(c) $K_{max}$', 3, model_colors[2], [0, 5], [0, 2, 4], 0], 
+                  ['SOX_d3', 'SOX', 'a',  r'(d) $a$', 4, model_colors[2], [0, 10], [0, 4, 8], 0.35], 
+                  ['SOX_d3', 'SOX', 'psi_50',  r'(e) $-\psi_{50}$', 5, model_colors[2], [0, 10], [0, 4, 8], 0.35]]
 
     print('Model\tParam\tN\tB\tG\tC')
     for mod, mod_label,p,\
@@ -198,7 +198,7 @@ def fig_pftviolins(fig_name):
 
     plt.tight_layout()
     plt.savefig('%s.png' % fig_name, dpi=600)
-    plt.savefig('%s.eps' % fig_name)
+    plt.savefig('%s.eps' % fig_name, dpi=600)
 
 
 def param_corr(): 
