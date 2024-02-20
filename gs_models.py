@@ -27,7 +27,7 @@ def cal_gamma_star_temp(Tl):
 def cal_a2_Rub(Tl):
     Kc = cal_MM_Kc_temp(Tl)
     Ko = cal_MM_Ko_temp(Tl)
-    a2 = Kc * ( 1 - Cao / Ko)
+    a2 = Kc * ( 1 + Cao / Ko)
     return a2
 
 
